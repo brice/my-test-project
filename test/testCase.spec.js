@@ -38,9 +38,10 @@ describe('TestCase app', function() {
 		});
 
 		it('should return the executions array', function() {
+			expected = [1,2,3,4,5];
 			json ='{"result": true, "executions": [1,2,3,4,5]}';
 			testCase = new TestCase(json);
-			assert.equal(testCase.getExecutions(), [1,2,3,4,5]);
+			assert.deepEqual(testCase.getExecutions(), expected);
 		});
 	});
 });
