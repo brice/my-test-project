@@ -1,0 +1,19 @@
+language: node_js
+node_js:
+    - "node"
+
+script:
+    - node_modules/.bin/jshint src
+    - npm test
+
+before_deploy: 
+    - node_modules/.bin/jsdoc src
+
+deploy:
+    provider: pages
+    skip-cleanup: true
+    github-token: $token_github
+    keep-history: true
+    local-dir: ./out
+    on:
+        branch: master
