@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+ - "node"
+script:
+ - echo "installation npm"
+ - npm install
+ - echo "npm test"
+ - npm test
+ - echo "instalation jshint"
+ - npm install jshint --save-dev
+ - echo "test style"
+ - node_modules/.bin/jshint src
