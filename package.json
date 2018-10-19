@@ -15,7 +15,5 @@
   "devDependencies": {
     "mocha": "^5.2.0"
   },
-  "dependencies": {
-    "volkswagen": "^1.4.2"
-  }
+  "dependencies": {}
 }
