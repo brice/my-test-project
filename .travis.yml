@@ -23,7 +23,7 @@ script:
 # after_success or after_failure
 
 before_deploy:
-  - node_modules/jsdoc/jsdoc.js
+  - node_modules/.bin/jsdoc src
 
 deploy:
   provider: pages
