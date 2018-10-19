@@ -1,0 +1,9 @@
+language: node_js
+node_js:
+  - "node"
+
+sricpt:
+  - echo "VOIIIICI UN TEEEESTE"
+  - npm update
+  - node_modules/.bin/jshint src
+  - npm test
