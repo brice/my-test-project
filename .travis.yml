@@ -2,15 +2,13 @@ language: node_js
 node_js:
         - "node"
 script:
-        - echo "MAJ"
-        - npm update
         - echo "Les tests"
         - npm test
         - echo "Verification des styles"
         - node_modules/.bin/jshint src
 
 before_deploy:
-        - ./node_modules/.bin/jsdoc src
+        - node_modules/.bin/jsdoc src
 deploy:
         provider : pages
         skip-cleanup : true
