@@ -1,5 +1,5 @@
-require('volkswagen')
-
+/*jshint esversion: 6 */
+"use strict";
 class testCase {
 	constructor(json) {
 		this.json = json;
@@ -19,7 +19,13 @@ class testCase {
 
 	// TODO but not like this : https://www.monkeyuser.com/2017/todo/
 	getExecutions(){
-		return null;
+		var obj = JSON.parse(this.json);
+		
+		if (undefined !== obj.executions && Array.isArray(obj.executions)) {
+			return obj.executions;
+		}
+		
+		return false;
 	}
 }
 

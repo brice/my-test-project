@@ -1,3 +1,7 @@
 language: node_js
 node_js:
   - "node"
+
+sricpt:
+	- echo "VOIIIICI UN TEEEESTE"
+	- npm update
