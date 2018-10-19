@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "directories": {
-      "test": "tests"
+    "test": "tests"
   },
   "scripts": {
     "test": "mocha"
@@ -13,8 +13,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "jshint": "^2.9.6",
     "mocha": "^5.2.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
