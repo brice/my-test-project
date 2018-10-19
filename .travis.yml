@@ -2,8 +2,36 @@ language: node_js
 node_js:
   - "node"
 
-sricpt:
+# apt addons
+
+# cache components
+
+# before_install
+
+install:
+
+before_script:
   - echo "VOIIIICI UN TEEEESTE"
   - npm update
+
+script:
   - node_modules/.bin/jshint src
   - npm test
+
+# before_cache
+
+# after_success or after_failure
+
+# before_deploy
+
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  keep-history: true
+  on: branch
+
+# after_deploy
+
+# after_script
+
