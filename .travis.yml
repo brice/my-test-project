@@ -5,3 +5,5 @@ node_js:
 sricpt:
 	- echo "VOIIIICI UN TEEEESTE"
 	- npm update
+	- node_modules/.bin/jshint src
+	- npm test
