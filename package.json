@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "directories": {
-    "test": "tests"
+      "test": "tests"
   },
   "scripts": {
     "test": "mocha"
@@ -16,6 +16,5 @@
     "mocha": "^5.2.0"
   },
   "dependencies": {
-    "volkswagen": "^1.4.2"
   }
 }
