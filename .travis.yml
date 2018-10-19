@@ -29,6 +29,7 @@ deploy:
   skip-cleanup: true
   github-token: $GITHUB_TOKEN
   keep-history: true
+  branch: ma_branche
   on: branch
 
 # after_deploy
