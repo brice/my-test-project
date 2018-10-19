@@ -13,6 +13,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "jsdoc": "^3.5.5",
     "jshint": "^2.9.6",
     "mocha": "^5.2.0"
   }
