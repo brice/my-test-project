@@ -3,5 +3,5 @@ node_js:
     - "node"
 
 script:
-    - npm install jshint --save-dev
-    - node_modules/.bin/jshint src
+    - npm update
+    - npm test
