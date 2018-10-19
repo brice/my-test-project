@@ -17,4 +17,4 @@ deploy:
         - keep-history : true
         - local-dir : out
         - on :
-          - branch: master
+          branch: master
