@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+"use strict";
 class testCase {
 	constructor(json) {
 		this.json = json;
