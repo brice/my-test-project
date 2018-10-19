@@ -1,4 +1,5 @@
 {
+  "moz" : true,
   "curly": true,
   "eqeqeq": true,
   "nocomma": true,
