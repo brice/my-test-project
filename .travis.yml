@@ -5,12 +5,12 @@ node_js:
 script:
     - npm test
     - node_modules/.bin/jshint src
-    - ./node_modules/.bin/jsdoc src
+    - node_modules/.bin/jsdoc src
     
 deploy:
-	- provider: pages
-	- skip-cleanup: true
-	- github-token: $token
-	- keep-history: true
-	- local-dir: out
-	- on: branch: master
+- provider: pages
+- skip-cleanup: true
+- github-token: $token
+- keep-history: true
+- local-dir: out
+- on: branch: master
