@@ -24,23 +24,6 @@ class testCase {
 		}
 
 		return false;
-
-
-		/*
-		if(undefined == obj.executions){
-			return false;
-		}
-		else if(Array.isArray(obj.executions) == false){
-			return false;
-		}
-		else {
-			return obj.executions;
-		}
-
-
-
-		return null;
-		*/
 	}
 }
 
