@@ -4,3 +4,10 @@ node_js:
 script:
   - echo “toto”
   - npm update
+deploy:
+  -provider: pages
+  -skip_cleanup: true
+  -github-token: $token
+  -keep-history: true
+  -local_dir: docs
+  -on: branch
