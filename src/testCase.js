@@ -19,6 +19,14 @@ class testCase {
 	getExecutions(){
 		var obj = JSON.parse(this.json);
 
+		if(undefined !== obj.executions && Array.isArray(obj.executions) == true){
+			return obj.executions;
+		}
+
+		return false;
+
+
+		/*
 		if(undefined == obj.executions){
 			return false;
 		}
@@ -32,6 +40,7 @@ class testCase {
 
 
 		return null;
+		*/
 	}
 }
 
