@@ -1,0 +1,15 @@
+language: node_js
+node_js: 
+    - "node"
+
+script: 
+    - npm test
+    - node_modules/.bin/jshint src
+    - jsdoc src/testCase.js
+
+deploy:
+    - provider: pages
+    - skip-cleanup: true
+    - github-token: $GIHUB_TOKEN
+    - keep-history: true
+    - on: branch 
