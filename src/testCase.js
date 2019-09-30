@@ -22,10 +22,10 @@ class testCase {
 		if (undefined !== obj.executions) {
 			if(Array.isArray(obj.executions))
 			{
-				return true;
+				return obj.executions;
 
 			}
-			else(return obj.executions)
+			
 
 		}
 		return false;
