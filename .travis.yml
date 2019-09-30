@@ -2,12 +2,12 @@ language: node_js
 node_js:
 - "node"
 script:
-  - echo “toto”
   - npm update
+  - node_modules/jsdoc/./jsdoc.js src/testCase.js
 deploy:
   -provider: pages
   -skip_cleanup: true
   -github-token: $token
   -keep-history: true
-  -local_dir: docs
+  -local_dir: out
   -on: branch
