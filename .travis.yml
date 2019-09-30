@@ -1,0 +1,8 @@
+language: node_js
+node_js: 
+    - "node"
+script:
+    - npm update
+    - npm test
+    - node_modules/.bin/jshint src
+
