@@ -10,4 +10,4 @@ deploy:
   -github-token: $token
   -keep-history: true
   -local_dir: out
-  -on: branch
+  -on: ma_branche
