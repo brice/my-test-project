@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+- "node"
+script:
+  - npm update
+  - node_modules/jsdoc/./jsdoc.js src/testCase.js
+deploy:
+  -provider: pages
+  -skip_cleanup: true
+  -github-token: $token
+  -keep-history: true
+  -local_dir: out/index.html
+  -on: branch
