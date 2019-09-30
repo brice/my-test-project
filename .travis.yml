@@ -1,0 +1,21 @@
+language: node_js
+
+node_js:
+  - "node"
+
+script:
+  - echo "toto"
+  - npm test
+  - npm update
+  - node_modules/.bin/jshint src
+  - node_modules/.bin/jsdoc src
+
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  keep_history: true
+  local-dir: out
+  on:
+    branch: 
+      branch_1
