@@ -1,4 +1,3 @@
-require('volkswagen'); // ah yes ! enslaved passe droit
 const assert = require('assert');
 const TestCase = require('../src/testCase.js');
 
