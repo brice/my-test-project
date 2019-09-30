@@ -2,7 +2,7 @@
   "curly": true,
   "eqeqeq": true,
   "nocomma": true,
-  "strict": "global",
+  "strict": false,
   "globals": {
     "require": false,
     "module": false,
@@ -10,5 +10,6 @@
     "describe": false,
     "it": false,
     "expect": false
-  }
+  },
+  "esversion": 6
 }
