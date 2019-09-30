@@ -1,0 +1,7 @@
+language: node_js
+node_js:
+        - "node"
+script:
+        - echo “toto”
+        - npm update
+        - node_modules/.bin/jshint src

@@ -1,3 +1,4 @@
+"use strict";
 class testCase {
 	constructor(json) {
 		this.json = json;
@@ -17,7 +18,14 @@ class testCase {
 
 	// TODO but not like this : https://www.monkeyuser.com/2017/todo/
 	getExecutions(){
-		return null;
+		const obj = JSON.parse(this.json);
+		if(undefined !== obj.executions){
+			if(Array.isArray(obj.executions)){
+				return obj.executions;
+			}
+		}
+
+		return false;
 	}
 }
 
