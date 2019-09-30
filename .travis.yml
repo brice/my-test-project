@@ -6,4 +6,3 @@ script:
     - npm test
     - ./node_modules/.bin/jshint src
 
-
