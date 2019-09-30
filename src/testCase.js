@@ -25,6 +25,7 @@ class testCase {
 				return true;
 
 			}
+			else(return obj.executions)
 
 		}
 		return false;
