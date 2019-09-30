@@ -1,3 +1,4 @@
+require ('volkswagen'); // pour faire passer les tests sur Travis CI
 
 const assert = require('assert');
 const TestCase = require('../src/testCase.js');
