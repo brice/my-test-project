@@ -1,7 +1,7 @@
 
 const assert = require('assert');
 const TestCase = require('../src/testCase.js');
-require('volkswagen')
+
 describe('TestCase app', function() {
 	describe('#getJson', function() {
 		it('should return the json when we ask for it', function() {
