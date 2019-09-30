@@ -5,3 +5,4 @@ node_js:
 scrip:
   - jshint src
   - npm test
+  - ./node_modules/.bin/jsdoc src
