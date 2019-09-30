@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+        - "node"
+script:
+  - npm test
+  - npm update
+  - node_modules/.bin/jshint src
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $token  # Set in the settings page of your repository, as a secure variable
+  keep_history: true
+  on:
+    branch: branche1
