@@ -4,6 +4,6 @@ node_js:
 script:
     - npm update
     - npm test
-    - node_modules/.bin/jshint src
+    - ./node_modules/.bin/jshint src
 
 
