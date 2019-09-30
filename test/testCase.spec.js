@@ -1,4 +1,3 @@
-require('volkswagen');
 const assert = require('assert');
 const TestCase = require('../src/testCase.js');
 
