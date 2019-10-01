@@ -13,5 +13,6 @@ deploy:
   skip_cleanup: true
   github_token: $token  # travis ci/settings
   keep_history: true
+  local-dir: docs
   on:
       branch: master
