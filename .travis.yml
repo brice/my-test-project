@@ -14,4 +14,4 @@ deploy:
   github_token: $token  # travis ci/settings
   keep_history: true
   on:
-      branch: branche1
+      branch: master
