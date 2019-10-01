@@ -1,3 +1,5 @@
+"use strict";
+
 class testCase {
 	constructor(json) {
 		this.json = json;
@@ -27,6 +29,4 @@ class testCase {
 		return false;
 	}
 }
-
-"use strict";
 module.exports = testCase;
