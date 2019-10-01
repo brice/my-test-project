@@ -10,5 +10,5 @@ deploy:
   github-token: $token
   keep-history: true
   on:
-  branch: ma_branche
+  branch: master
 
