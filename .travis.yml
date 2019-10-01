@@ -7,3 +7,11 @@ script:
   - npm update
   - npm run test
   - node_modules/.bin/jshint src
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $token  # travis ci/settings
+  keep_history: true
+  on:
+      branch: branche1
