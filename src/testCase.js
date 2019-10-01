@@ -28,4 +28,5 @@ class testCase {
 	}
 }
 
+"use strict";
 module.exports = testCase;
